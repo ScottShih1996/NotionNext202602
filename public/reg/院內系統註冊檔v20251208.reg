@@ -1,0 +1,143 @@
+Windows Registry Editor Version 5.00
+
+#住院系統
+[-HKEY_CLASSES_ROOT\admc]
+[HKEY_CLASSES_ROOT\admc]
+"URL Protocol"=""
+@="URL:admc"
+[HKEY_CLASSES_ROOT\admc\shell]
+[HKEY_CLASSES_ROOT\admc\shell\open]
+[HKEY_CLASSES_ROOT\admc\shell\open\command]
+@="\"C:\\admc\\systemftp.exe\" \"%1\""
+
+#急診系統
+[-HKEY_CLASSES_ROOT\newemr]
+[HKEY_CLASSES_ROOT\newemr]
+"URL Protocol"=""
+@="URL:newemr"
+[HKEY_CLASSES_ROOT\newemr\shell]
+[HKEY_CLASSES_ROOT\newemr\shell\open]
+[HKEY_CLASSES_ROOT\newemr\shell\open\command]
+@="\"C:\\newemr\\pemrproj.exe\" \"%1\""
+
+#電子病歷簽章系統
+[-HKEY_CLASSES_ROOT\NewEmrSign]
+[HKEY_CLASSES_ROOT\NewEmrSign]
+"URL Protocol"=""
+@="URL:NewEmrSign"
+[HKEY_CLASSES_ROOT\NewEmrSign\shell]
+[HKEY_CLASSES_ROOT\NewEmrSign\shell\open]
+[HKEY_CLASSES_ROOT\NewEmrSign\shell\open\command]
+@="\"C:\\NewEmrSign\\systemftp.exe\" \"%1\""
+C:\NewEmrSign\systemftp.exe
+
+#營養整合系統
+[-HKEY_CLASSES_ROOT\nurti]
+[HKEY_CLASSES_ROOT\nurti]
+"URL Protocol"=""
+@="URL:nurti"
+[HKEY_CLASSES_ROOT\nurti\shell]
+[HKEY_CLASSES_ROOT\nurti\shell\open]
+[HKEY_CLASSES_ROOT\nurti\shell\open\command]
+@="\"C:\\nurti\\systemftp.exe\" \"%1\""
+
+#MUSE Editor (MUSE Logon)
+[-HKEY_CLASSES_ROOT\MUSE]
+[HKEY_CLASSES_ROOT\MUSE]
+"URL Protocol"=""
+@="URL:MUSE"
+[HKEY_CLASSES_ROOT\MUSE\shell]
+[HKEY_CLASSES_ROOT\MUSE\shell\open]
+[HKEY_CLASSES_ROOT\MUSE\shell\open\command]
+@="\"C:\Program Files (x86)\MUSE\MUSEEditor.exe -museauthenticate -Culture:zh-tw" \"%1\""
+
+#西醫門診系統
+[-HKEY_CLASSES_ROOT\opdc]
+[HKEY_CLASSES_ROOT\opdc]
+"URL Protocol"=""
+@="URL:opdc
+[HKEY_CLASSES_ROOT\opdc\shell]
+[HKEY_CLASSES_ROOT\opdc\shell\open]
+[HKEY_CLASSES_ROOT\opdc\shell\open\command]
+@="\"C:\\opdc\\systemftp.exe\" \"%1\""
+
+#暴力通報系統
+[-HKEY_CLASSES_ROOT\RiotSOS]
+[HKEY_CLASSES_ROOT\RiotSOS]
+"URL Protocol"=""
+@="URL:RiotSOS
+[HKEY_CLASSES_ROOT\RiotSOS\shell]
+[HKEY_CLASSES_ROOT\RiotSOS\shell\open]
+[HKEY_CLASSES_ROOT\RiotSOS\shell\open\command]
+@="\"C:\\opdc\\RiotSOS.exe\" \"%1\""
+
+#開刀房系統
+[-HKEY_CLASSES_ROOT\orsys]
+[HKEY_CLASSES_ROOT\orsys]
+"URL Protocol"=""
+@="URL:orsys
+[HKEY_CLASSES_ROOT\orsys\shell]
+[HKEY_CLASSES_ROOT\orsys\shell\open]
+[HKEY_CLASSES_ROOT\orsys\shell\open\command]
+@="\"C:\\orsys\\systemftp.exe\" \"%1\""
+
+#PACS護理站
+[-HKEY_CLASSES_ROOT\HISCallPACS]
+[HKEY_CLASSES_ROOT\HISCallPACS]
+"URL Protocol"=""
+@="URL:HISCallPACS
+[HKEY_CLASSES_ROOT\HISCallPACS\shell]
+[HKEY_CLASSES_ROOT\HISCallPACS\shell\open]
+[HKEY_CLASSES_ROOT\HISCallPACS\shell\open\command]
+@="\"C:\\HISCallPACS\\systemftp.exe\" \"%1\""
+
+#檢查室整合系統
+[-HKEY_CLASSES_ROOT\ISP]
+[HKEY_CLASSES_ROOT\ISP]
+"URL Protocol"=""
+@="URL:ISP
+[HKEY_CLASSES_ROOT\ISP\shell]
+[HKEY_CLASSES_ROOT\ISP\shell\open]
+[HKEY_CLASSES_ROOT\ISP\shell\open\command]
+@="\"C:\\isp\\bin\\systemftp_New.exe\" \"%1\""
+
+#心導管整合系統
+[-HKEY_CLASSES_ROOT\Cathlist]
+[HKEY_CLASSES_ROOT\Cathlist]
+"URL Protocol"=""
+@="URL:Cathlist
+[HKEY_CLASSES_ROOT\Cathlist\shell]
+[HKEY_CLASSES_ROOT\Cathlist\shell\open]
+[HKEY_CLASSES_ROOT\Cathlist\shell\open\command]
+@="\"C:\\Cathlist\\systemftp.exe\" \"%1\""
+
+
+#Netterm
+[-HKEY_CLASSES_ROOT\Netterm]
+[HKEY_CLASSES_ROOT\Netterm]
+"URL Protocol"=""
+@="URL:Netterm
+[HKEY_CLASSES_ROOT\Cathlist\shell]
+[HKEY_CLASSES_ROOT\Cathlist\shell\open]
+[HKEY_CLASSES_ROOT\Cathlist\shell\open\command]
+@="\"C:\\NetTerm\\netterm.exe\" \"%1\""
+
+#scoccorball
+[-HKEY_CLASSES_ROOT\scoccorball]
+[HKEY_CLASSES_ROOT\scoccorball]
+"URL Protocol"=""
+@="URL:Netterm
+[HKEY_CLASSES_ROOT\Cathlist\shell]
+[HKEY_CLASSES_ROOT\Cathlist\shell\open]
+[HKEY_CLASSES_ROOT\Cathlist\shell\open\command]
+@="\"C:\\ISP\\sono\\systemftp2.exe\" \"%1\""
+
+#排檢程式
+[-HKEY_CLASSES_ROOT\schdual]
+[HKEY_CLASSES_ROOT\schdual]
+"URL Protocol"=""
+@="URL:schdual
+[HKEY_CLASSES_ROOT\Cathlist\shell]
+[HKEY_CLASSES_ROOT\Cathlist\shell\open]
+[HKEY_CLASSES_ROOT\Cathlist\shell\open\command]
+@="\"C:\\schdual\\systemftp.exe\" \"%1\""
