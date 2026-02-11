@@ -17,15 +17,15 @@ import { useHotkeys } from 'react-hotkeys-hook'
 const ShortCutActions = [
   {
     key: '↑ ↓',
-    action: '选择'
+    action: '選擇'
   },
   {
     key: 'Enter',
-    action: '跳转'
+    action: '跳轉'
   },
   {
     key: 'Esc',
-    action: '关闭'
+    action: '關閉'
   }
 ]
 
@@ -266,7 +266,7 @@ export default function AlgoliaSearchModal({ cRef }) {
 
         <input
           type='text'
-          placeholder='在这里输入搜索关键词...'
+          placeholder='請輸入關鍵字'
           onChange={e => handleInputChange(e)}
           onFocus={() => setIsInputFocused(true)} // 聚焦时
           onBlur={() => setIsInputFocused(false)} // 失去焦点时
@@ -282,7 +282,7 @@ export default function AlgoliaSearchModal({ cRef }) {
           <div>
             <p className=' text-slate-600 text-center my-4 text-base'>
               {' '}
-              无法找到相关结果
+              無法找到相關結果
               <span className='font-semibold'>&quot;{keyword}&quot;</span>
             </p>
           </div>
@@ -324,13 +324,13 @@ export default function AlgoliaSearchModal({ cRef }) {
           <div>
             {totalHit > 0 && (
               <p>
-                共搜索到 {totalHit} 条结果，用时 {useTime} 毫秒
+                共搜索到 {totalHit} 則結果，用時 {useTime} 毫秒
               </p>
             )}
           </div>
-          <div className='text-gray-600 dark:text-gray-300  text-right'>
+          <div className='text-xs text-gray-600 dark:text-gray-300  text-right'>
             <span>
-              <i className='fa-brands fa-algolia'></i> Algolia 提供搜索服务
+              <i className='fa-brands fa-algolia'></i> Powered by Algolia 
             </span>
           </div>
         </div>
