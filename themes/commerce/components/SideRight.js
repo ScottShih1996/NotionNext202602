@@ -63,18 +63,19 @@ export default function SideRight(props) {
         <LatestPostsGroup {...props} />
       </Card>}
 
-      <Announcement post={notice}/>
-
       {siteConfig('COMMENT_WALINE_SERVER_URL') && siteConfig('COMMENT_WALINE_RECENT') && <HexoRecentComments/>}
 
       <div className='sticky top-20'>
+
+        {rightAreaSlot}
+        <FaceBookPage/>
+        <Live2D />        
+        <Announcement post={notice}/>
+        
         {post && post.toc && post.toc.length > 1 && <Card>
           <Catalog toc={post.toc} />
         </Card>}
 
-        {rightAreaSlot}
-        <FaceBookPage/>
-        <Live2D />
       </div>
 
     </div>
