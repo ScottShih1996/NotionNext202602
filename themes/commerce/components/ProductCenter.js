@@ -18,7 +18,7 @@ export default function ProductCenter(props) {
   return (
     <div className='w-full'>
       <div className='w-full text-center text-4xl font-bold'>
-        {siteConfig('COMMERCE_TEXT_CENTER_TITLE', 'Product Center', CONFIG)}
+        {siteConfig('COMMERCE_TEXT_CENTER_TITLE', null, CONFIG)}
       </div>
       {siteConfig('COMMERCE_TEXT_CENTER_DESCRIPTION') && (
         <div className='w-full text-center text-lg my-3 text-gray-500'>
@@ -31,7 +31,7 @@ export default function ProductCenter(props) {
 
         <div className='w-full px-4'>
           {/* 文章列表 */}
-          <div className='grid md:grid-cols-3 grid-cols-2 gap-5'>
+          <div className='grid md:grid-cols-5 grid-cols-3 gap-2'>
             {posts?.map(post => (
               <ProductCard
                 index={posts.indexOf(post)}
