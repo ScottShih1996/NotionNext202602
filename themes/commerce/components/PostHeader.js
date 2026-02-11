@@ -8,7 +8,9 @@ export default function PostHeader({ post }) {
     return <></>
   }
   const headerImage = post?.pageCover ? post.pageCover : siteConfig('HOME_BANNER_IMAGE')
-
+  //卜算子統計START
+  const ANALYTICS_BUSUANZI_ENABLE = siteConfig('ANALYTICS_BUSUANZI_ENABLE')
+  //卜算子統計END
   return (
     <div id="header" className="w-full h-96 relative md:flex-shrink-0 z-10" >
       <LazyImage priority={true} src={headerImage} className='w-full h-full object-cover object-center absolute top-0'/>
@@ -28,10 +30,21 @@ export default function PostHeader({ post }) {
             </div>
 
           {/* 文章Title */}
-          <div className="leading-snug font-bold xs:text-4xl sm:text-4xl md:text-5xl md:leading-snug text-4xl shadow-text-md flex justify-center text-center text-white">
-            {siteConfig('POST_TITLE_ICON') && <NotionIcon icon={post.pageIcon} className='text-4xl mx-1' />}<div className='text-4xl mx-1'>{post.title}</div>
+          <div className="leading-snug font-bold xs:text-4xl sm:text-4xl md:text-5xl md:leading-snug text-4xl shadow-text-md flex justify-center text-center text-white mb-2">
+            {siteConfig('POST_TITLE_ICON') && <NotionIcon icon={post.pageIcon} className='text-4xl mx-1' />}<div className='text-4xl mx-1'>{post.title}</div>           
           </div>
+   
+          <div className='flex justify-center text-white'>       
+          {ANALYTICS_BUSUANZI_ENABLE && (
+              <div className='hidden busuanzi_container_page_pv'>
+                <i className='fas fa-eye mr-1' />
+                <span className='busuanzi_value_page_pv' />
+              </div>
+              )}
+				 </div>
+          
 
+                
         </div>
       </header>
     </div>
