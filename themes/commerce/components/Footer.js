@@ -117,6 +117,7 @@ const Footer = props => {
                       </div>
                     )}
 
+                    <div className='text-lg'>
                     {JSON.parse(
                       siteConfig('COMMERCE_CONTACT_TELEGRAM_SHOW', true, CONFIG)
                     ) && (
@@ -126,12 +127,14 @@ const Footer = props => {
                             target='_blank'
                             rel='noreferrer'
                             href={siteConfig('CONTACT_TELEGRAM', '#', CONFIG)}
-                            title={'telegram'}>
-                            <i className='transform hover:scale-125 duration-150 fab fa-telegram dark:hover:text-red-400 hover:text-red-600' />
+                            title={'Youtube'}>
+                            <i className='transform hover:scale-125 duration-150 fab fa-youtube dark:hover:text-red-400 hover:text-red-600' />{' '}
+                            {siteConfig('CONTACT_TELEGRAM')}
                           </a>
                         }
                       </div>
                     )}
+                    </div>
                   </div>
                   <div className='text-lg'>
                     {' '}
@@ -140,7 +143,7 @@ const Footer = props => {
                         onClick={e =>
                           handleEmailClick(e, emailIcon, CONTACT_EMAIL)
                         }
-                        title='email'
+                        title='Email'
                         className='cursor-pointer'
                         ref={emailIcon}>
                         <i className='transform hover:scale-125 duration-150 fas fa-envelope dark:hover:text-red-400 hover:text-red-600' />{' '}
@@ -227,7 +230,7 @@ const Footer = props => {
           {/* 右边公司名字 */}
           <div className='md:text-right'>
             <h1 className='text-xs pt-4 text-light-400 dark:text-gray-400'>
-              {siteConfig('TITLE')} {siteConfig('BIO')}
+              {siteConfig('TITLE')} {/*siteConfig('BIO')*/}
             </h1>
             <h2> {siteConfig('DESCRIPTION')}</h2>
             {/* 可选备案信息 */}
