@@ -64,12 +64,30 @@ def push_to_baidu(site, urls, token):
     except Exception as e:
         print("An error occurred:", e)
 
+def push_to_so360(site, urls, token):
+    api_url = f"https://api.so.com/push?site={site}&token={token}"
+
+    payload = "\n".join(urls)
+    headers = {"Content-Type": "text/plain"}
+
+    try:
+        response = requests.post(api_url, data=payload, headers=headers)
+        result = response.json()
+        if "success" in result and result["success"]:
+            print("成功推送到 360 搜尋.")
+        elif "error" in result:
+            print("推送到 360 搜尋出现错误，错误信息为：", result["message"])
+        else:
+            print("Unknown response from 360 搜尋:", result)
+    except Exception as e:
+        print("An error occurred:", e)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='parse sitemap')
     parser.add_argument('--url', type=str, default=None, help='The url of your website')
     parser.add_argument('--bing_api_key', type=str, default=None, help='your bing api key')
     parser.add_argument('--baidu_token', type=str, default=None, help='Your baidu push token')
+    parser.add_argument('--so360_token', type=str, default=None, help='Your 360 push token')
     args = parser.parse_args()
 
     # 获取当前的时间戳作为随机种子
@@ -91,6 +109,10 @@ if __name__ == '__main__':
             if args.baidu_token:
                 print('正在推送至百度，请稍后……')
                 push_to_baidu(args.url, urls, args.baidu_token)
+            # 推送360搜尋
+            if args.so360_token:
+                print('正在推送至 360 搜尋，请稍候……')
+                push_to_so360(args.url, urls, args.so360_token)
     else:
         print('请前往 Github Action Secrets 配置 URL')
         print('详情参见: https://ghlcode.cn/fe032806-5362-4d82-b746-a0b26ce8b9d9')
