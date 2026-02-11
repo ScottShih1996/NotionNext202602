@@ -928,15 +928,15 @@ code[class*='language-'] {
 }
 
 .notion-callout {
-  padding: 16px 16px 16px 12px;
+  padding: 12px 12px 12px 6px;
   display: inline-flex;
   width: 100%;
-  border-radius: 3px;
+  border-radius: 6px;
   border-width: 1px;
   align-items: center;
   box-sizing: border-box;
   margin: 4px 0;
-  border: 1px solid var(--fg-color-0);
+  border: 2px solid var(--fg-color-0);
 }
 
 .dark-mode .notion-callout {
@@ -1966,6 +1966,7 @@ svg + .notion-page-title-text {
 
 .notion-asset-wrapper-pdf > div {
   display: block !important;
+  height: 100%;
 }
 
 /* https://github.com/kchen0x */
@@ -2067,11 +2068,11 @@ code.language-mermaid {
 .notion-simple-table-row {
 }
 
-/* 表格头 新版notion不用 */
-/* .notion-simple-table tr:first-child td {
+/* 表格头 */
+.notion-simple-table tr:first-child td {
   background-color: #f5f6f8;
   @apply text-center font-bold dark:bg-gray-800 !important;
-} */
+}
 
 .notion-simple-table td {
   border: 1px solid var(#eee) !important;
