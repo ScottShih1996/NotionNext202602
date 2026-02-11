@@ -40,6 +40,7 @@ jobs:
           URL: ${{ secrets.URL }}
           BAIDU_TOKEN: ${{ secrets.BAIDU_TOKEN }}
           BING_API_KEY: ${{ secrets.BING_API_KEY }}
+          SO360_TOKEN: ${{ secrets.SO360_TOKEN }}
         run: |
           if [ -n "$URL" ]; then
             if [ -n "$BAIDU_TOKEN" ]; then
@@ -52,6 +53,12 @@ jobs:
               python pushUrl.py --url $URL --bing_api_key $BING_API_KEY
             else
               echo "请前往 Github Action Secrets 配置 BING_API_KEY:"
+              echo "详情参见: 'https://www.ghlcode.cn/fe032806-5362-4d82-b746-a0b26ce8b9d9'"
+            fi
+            if [ -n "$SO360_TOKEN" ]; then
+              python pushUrl.py --url $URL --so360_token $SO360_TOKEN
+            else
+              echo "请前往 Github Action Secrets 配置 SO360_TOKEN:"
               echo "详情参见: 'https://www.ghlcode.cn/fe032806-5362-4d82-b746-a0b26ce8b9d9'"
             fi
           else
