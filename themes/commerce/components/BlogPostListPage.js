@@ -16,14 +16,14 @@ const BlogPostListPage = ({ page = 1, posts = [], postCount, siteInfo }) => {
   const { NOTION_CONFIG } = useGlobal()
   const POSTS_PER_PAGE = siteConfig('POSTS_PER_PAGE', null, NOTION_CONFIG)
   const totalPage = Math.ceil(postCount / POSTS_PER_PAGE)
-  const showPagination = postCount >= POSTS_PER_PAGE
+  const showPagination = postCount > POSTS_PER_PAGE
   if (!posts || posts.length === 0 || page > totalPage) {
     return <BlogPostListEmpty />
   } else {
     return (
       <div id='container' className='w-full'>
         {/* 文章列表 */}
-        <div className='py-4 gap-4 grid grid-cols-3'>
+        <div className='py-4 gap-4 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6'>
           {posts?.map(post => (
             <ProductCard
               index={posts.indexOf(post)}
