@@ -1,0 +1,62 @@
+文件標題:「桂圓GPT小幫手參考資料來源」
+
+# Harrison's Internal Medicine, 22nd Edition
+# Washington Manual of Medical Therapeutics, 37th Edition
+# Pocket Medicine: The Massachusetts General Hospital Handbook of Internal Medicine, 8th Edition
+# Robbins and Cotran Pathologic Basis of Disease
+# Kumar, Abbas, Aster. Robbins Basic Pathology
+# Goodman & Gilman’s: The Pharmacological Basis of Therapeutics
+# Katzung & Trevor’s Pharmacology: Examination & Board Review
+# Sabiston Textbook of Surgery
+# Schwartz’s Principles of Surgery
+# Bailey & Love’s Short Practice of Surgery
+# Nelson Textbook of Pediatrics
+# Current Medical Diagnosis & Treatment (CMDT)
+# Oxford Handbook of Clinical Medicine
+# Oxford Handbook of Clinical Specialties
+# Guyton and Hall Textbook of Medical Physiology
+# Bates’ Guide to Physical Examination and History Taking
+# Braunwald’s Heart Disease: A Textbook of Cardiovascular Medicine
+# Goldman-Cecil Medicine
+# Sleisenger and Fordtran’s Gastrointestinal and Liver Disease
+# DeVita, Hellman, and Rosenberg’s Cancer: Principles & Practice of Oncology
+# Williams Textbook of Endocrinology
+# Campbell-Walsh Urology
+# Tintinalli’s Emergency Medicine Manual
+# First Aid for the USMLE Step 1
+# First Aid for the USMLE Step 2 CK
+# First Aid for the USMLE Step 3
+----
+# UpToDate
+https://www.uptodate.com
+# Sanford Guide
+# 台灣疾病管制署
+https://www.cdc.gov.tw/Disease/Index
+# 台灣肺炎診療指引
+https://pneumonia.idtaiwanguideline.org/
+# American Heart Association (AHA) Guidelines
+https://professional.heart.org/en/guidelines-and-statements
+# American Academy of Neurology (AAN) Guidelines
+https://www.aan.com/practice/guidelines
+# The Radiology Assistant
+https://radiologyassistant.nl/
+# Radiopaedia.org
+https://radiopaedia.org/
+# 健保藥品給付規定內容-114.07.24更新
+https://cmuhdnr.vercel.app/NHIdrugs1140724.txt
+# 2022第2型糖尿病臨床照護指引
+# 2022第2型糖尿病臨床照護指引-第二十一章 住院病人的糖尿病照護 (2023年2月更新版)
+# 2022第2型糖尿病臨床照護指引-第十六章 糖尿病的其他共病症 (2024年5月更新版)
+# 2022第2型糖尿病臨床照護指引-第十五章 糖尿病的小血管併發症與糖尿病足-4.糖尿病足 (2024年6月更新版)
+# Taiwan Diabetes Lipid Guideline 2023
+# 2023孕期糖尿病臨床照護指引
+# 2024 台灣糖尿病腎臟疾病臨床照護指引
+# 2022第2型糖尿病臨床照護指引 《感染與疫苗注射建議修訂》
+# 財團法人肝病防治學術基金會-Ｃ型肝炎治療手冊(2021.9)
+https://www.liver.org.tw/uploadfile/fileperiod_news02_category/2_1632386706.pdf
+# 財團法人肝病防治學術基金會-Ｂ型肝炎治療手冊(2025.6)
+https://www.liver.org.tw/uploadfile/fileperiod_news02_category/2_1750906017.pdf
+# 財團法人肝病防治學術基金會-肝癌對策病友手冊(2025.5)
+https://www.liver.org.tw/uploadfile/fileperiod_news02_category/2_1746595673.pdf
+# 2024 GINA Main Report: Global Strategy for Asthma Management and Prevention
+# 2025 GOLD Report: GLOBAL STRATEGY FOR PREVENTION, DIAGNOSIS AND MANAGEMENT
