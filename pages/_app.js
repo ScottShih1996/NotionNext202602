@@ -1,3 +1,7 @@
+
+import { Analytics } from '@vercel/analytics/react'
+import { SpeedInsights } from '@vercel/speed-insights/next'
+
 // import '@/styles/animate.css' // @see https://animate.style/
 import '@/styles/globals.css'
 import '@/styles/utility-patterns.css'
@@ -57,6 +61,8 @@ const MyApp = ({ Component, pageProps }) => {
       <GLayout {...pageProps}>
         <SEO {...pageProps} />
         <Component {...pageProps} />
+        <Analytics />
+        <SpeedInsights />
       </GLayout>
       <ExternalPlugins {...pageProps} />
     </GlobalContextProvider>
