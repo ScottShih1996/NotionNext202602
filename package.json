@@ -71,6 +71,8 @@
     "react-notion-x": "7.7.1",
     "react-share": "^5.2.2",
     "react-tweet-embed": "~2.0.0"
+    "@vercel/analytics": "latest",
+    "@vercel/speed-insights": "latest"
   },
   "devDependencies": {
     "@types/node": "22.15.3",
