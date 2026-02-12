@@ -56,6 +56,32 @@ export async function getStaticProps(req) {
     }
   }
 
+ const floatingPostSlug = siteConfig(
+    'COMMERCE_FLOATING_POST_SLUG',
+    'notification',
+    props?.NOTION_CONFIG
+  )
+  if (floatingPostSlug) {
+    const floatingPost = props.allPages?.find(
+      page =>
+        page?.slug === floatingPostSlug &&
+        page?.status === 'Published' &&
+        !(page?.password && page?.password !== '')
+    )
+
+    if (floatingPost) {
+      floatingPost.blockMap = await getPostBlocks(
+        floatingPost.id,
+        'slug',
+        siteConfig('COMMERCE_FLOATING_POST_PREVIEW_LINES', 18, props?.NOTION_CONFIG)
+      )
+      props.floatingPost = floatingPost
+    }
+  } else if (props.notice) {
+    props.floatingPost = props.notice
+  }
+
+  
   // 生成robotTxt
   generateRobotsTxt(props)
   // 生成Feed订阅
