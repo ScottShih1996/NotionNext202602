@@ -27,6 +27,7 @@ import SlotBar from './components/SlotBar'
 import TagItemMini from './components/TagItemMini'
 import TocDrawer from './components/TocDrawer'
 import { Style } from './style'
+import FloatingNotionWindow from './components/FloatingNotionWindow'
 
 /**
  * 基础布局 采用左右两侧布局，移动端使用顶部导航栏
@@ -121,11 +122,13 @@ const LayoutBase = props => {
  * @returns
  */
 const LayoutIndex = props => {
-  const { notice, latestPosts } = props
+  const { notice, latestPosts, floatingPost } = props
   const { locale } = useGlobal()
   return (
     <>
-
+    
+    <FloatingNotionWindow post={floatingPost} />
+    
     {/* 首页企业/品牌介绍 这里展示公告 */}
       {notice && (
         <div id='brand-introduction' className='dark:text-gray-300 mx-auto overflow-hidden'>
