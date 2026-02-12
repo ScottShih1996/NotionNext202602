@@ -52,9 +52,9 @@ const FloatingNotionWindow = ({ post }) => {
   }
 
   return (
-    <div className='hidden lg:block fixed right-6 top-1/2 -translate-y-1/2 w-[360px] z-40'>
+    <div className='fixed right-5 bottom-5 z-50'>
       <div className='rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-black shadow-xl overflow-hidden'>
-        <div className='flex items-center justify-between px-4 py-3 border-b border-gray-100 dark:border-gray-800'>
+        <div className='flex items-center justify-between px-4 py-2 border-b border-gray-100 dark:border-gray-800'>
           <SmartLink href={postLink} className='font-semibold text-sm hover:underline truncate pr-2'>
             {post.title}
           </SmartLink>
@@ -66,11 +66,11 @@ const FloatingNotionWindow = ({ post }) => {
           </button>
         </div>
 
-        <div className='max-h-[360px] overflow-y-auto px-4 py-3'>
-          <NotionPage post={post} className='notion light-mode notion-page' />
+        <div className='max-h-[360px] overflow-y-auto px-4'>
+          <NotionPage post={post} className='' />
         </div>
 
-        <label className='flex items-center gap-2 px-4 py-3 text-sm border-t border-gray-100 dark:border-gray-800'>
+        <label className='flex items-center gap-2 px-4 py-2 text-sm border-t border-gray-100 dark:border-gray-800'>
           <input
             type='checkbox'
             checked={dontShowToday}
