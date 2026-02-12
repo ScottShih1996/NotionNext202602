@@ -13,13 +13,6 @@ module.exports = {
   DIFY_CHATBOT_ENABLED: process.env.NEXT_PUBLIC_DIFY_CHATBOT_ENABLED || false,
   DIFY_CHATBOT_BASE_URL: process.env.NEXT_PUBLIC_DIFY_CHATBOT_BASE_URL || '',
   DIFY_CHATBOT_TOKEN: process.env.NEXT_PUBLIC_DIFY_CHATBOT_TOKEN || '',
-
-  // Notion 浮窗配置
-  FLOATING_WINDOW_ENABLED:
-    process.env.NEXT_PUBLIC_FLOATING_WINDOW_ENABLED || true,
-  FLOATING_WINDOW_PAGE_ID:
-    process.env.NEXT_PUBLIC_FLOATING_WINDOW_PAGE_ID || '15fc5d78128680bd9ae7f73878de8154',
-
   
   // 悬浮挂件
   WIDGET_PET: process.env.NEXT_PUBLIC_WIDGET_PET || true, // 是否显示宠物挂件
