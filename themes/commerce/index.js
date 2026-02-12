@@ -27,8 +27,6 @@ import SlotBar from './components/SlotBar'
 import TagItemMini from './components/TagItemMini'
 import TocDrawer from './components/TocDrawer'
 import { Style } from './style'
-import FloatingWindow from '@/components/FloatingWindow'
-
 
 /**
  * 基础布局 采用左右两侧布局，移动端使用顶部导航栏
@@ -136,7 +134,6 @@ const LayoutIndex = props => {
       )}
   
       {/* 产品中心 */}
-      <FloatingWindow />
       {/* 最近新增的文章 */}
       {latestPosts && latestPosts.length > 0 && (
         <div className='bg-white border-[#D2232A] p-4 mt-2 mb-4'>
