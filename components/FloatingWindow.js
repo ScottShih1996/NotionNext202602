@@ -13,13 +13,19 @@ const FloatingWindow = () => {
     const hidden = localStorage.getItem('floating-window-hide') === today
     if (hidden) return
     fetch('/api/floating-window')
-      .then(res => res.json())
+       .then(async res => {
+        if (!res.ok) return null
+        const contentType = res.headers.get('content-type') || ''
+        if (!contentType.includes('application/json')) return null
+        return await res.json()
+      })
       .then(data => {
         if (data?.blockMap) {
           setBlockMap(data.blockMap)
           setVisible(true)
         }
       })
+      .catch(() => {})
   }, [enabled])
 
   const handleClose = () => setVisible(false)
