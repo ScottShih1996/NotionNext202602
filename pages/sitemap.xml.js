@@ -48,12 +48,12 @@ function generateLocalesSitemap(link, allPages, locale) {
   }
   const dateNow = new Date().toISOString().split('T')[0]
   const defaultFields = [
-    {
-      loc: `${link}${locale}`,
-      lastmod: dateNow,
-      changefreq: 'daily',
-      priority: '0.7'
-    },
+ //   {
+ //     loc: `${link}${locale}`,
+ //     lastmod: dateNow,
+ //     changefreq: 'daily',
+ //     priority: '0.7'
+ //   },
     {
       loc: `${link}${locale}/archive`,
       lastmod: dateNow,
