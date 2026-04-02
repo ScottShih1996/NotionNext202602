@@ -136,8 +136,8 @@ const LayoutIndex = props => {
     //    </div>
     //  )}
   
-      {/* 产品中心 */}
-      {/* 最近新增的文章 */}
+   //   {/* 产品中心 */}
+   //   {/* 最近新增的文章 */}
    //   {latestPosts && latestPosts.length > 0 && (
    //     <div className='bg-white border-[#D2232A] p-4 mt-2 mb-4'>
    //       <div className='notion-callout-text text-lg font-bold border-b-2 py-2 border-[#D2232A]'> 
