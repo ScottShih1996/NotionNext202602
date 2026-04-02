@@ -138,23 +138,23 @@ const LayoutIndex = props => {
   
       {/* 产品中心 */}
       {/* 最近新增的文章 */}
-      {latestPosts && latestPosts.length > 0 && (
-        <div className='bg-white border-[#D2232A] p-4 mt-2 mb-4'>
-          <div className='notion-callout-text text-lg font-bold border-b-2 py-2 border-[#D2232A]'> 
-            <i className='fas fa-history mr-1'/>
-                {locale.COMMON.RECENT_POSTS}
-          </div>
-          {siteConfig('POST_LIST_STYLE') === 'page' ? (
-            <BlogPostListPage
-              {...props}
-              posts={latestPosts}
-              postCount={latestPosts.length}
-            />
-          ) : (
-            <BlogPostListScroll {...props} posts={latestPosts} />
-          )}
-        </div>
-      )}
+   //   {latestPosts && latestPosts.length > 0 && (
+   //     <div className='bg-white border-[#D2232A] p-4 mt-2 mb-4'>
+   //       <div className='notion-callout-text text-lg font-bold border-b-2 py-2 border-[#D2232A]'> 
+   //         <i className='fas fa-history mr-1'/>
+   //             {locale.COMMON.RECENT_POSTS}
+   //       </div>
+   //       {siteConfig('POST_LIST_STYLE') === 'page' ? (
+   //         <BlogPostListPage
+   //           {...props}
+   //           posts={latestPosts}
+   //           postCount={latestPosts.length}
+   //         />
+   //       ) : (
+   //         <BlogPostListScroll {...props} posts={latestPosts} />
+   //       )}
+   //     </div>
+   //   )}
       {/* 文章列表 */}
       <ProductCenter {...props} />
 
