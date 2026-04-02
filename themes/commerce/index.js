@@ -122,7 +122,7 @@ const LayoutBase = props => {
  * @returns
  */
 const LayoutIndex = props => {
-  const { notice, latestPosts } = props
+  const { notice, latestPosts, floatingPost } = props
   const { locale } = useGlobal()
   return (
     <>
