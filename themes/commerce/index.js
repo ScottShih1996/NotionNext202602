@@ -107,7 +107,7 @@ const LayoutBase = props => {
       </main>
 
       {/* 悬浮菜单 */}
-      <RightFloatArea floatSlot={floatSlot} />
+     // <RightFloatArea floatSlot={floatSlot} />
 
       {/* 页脚 */}
       <Footer {...props} />
