@@ -122,44 +122,11 @@ const LayoutBase = props => {
  * @returns
  */
 const LayoutIndex = props => {
-  const { notice, latestPosts, floatingPost } = props
-  const { locale } = useGlobal()
+  const { notice } = props
   return (
     <>
-    
-    <FloatingNotionWindow post={floatingPost} />
-    
-    {/* 首页企业/品牌介绍 这里展示公告 */}
-      {notice && (
-        <div id='brand-introduction' className='dark:text-gray-300 mx-auto overflow-hidden'>
-          <NotionPage post={notice} className='w-full px-6 pb-6 md:pb-20 max-w-8xl justify-center mx-auto notion light-mode notion-page notion-block-af419cf3882844f5a91d07b7ab328101' />
-        </div>
-      )}
-  
       {/* 产品中心 */}
-      {/* 最近新增的文章 */}
-      {latestPosts && latestPosts.length > 0 && (
-        <div className='bg-white border-[#D2232A] p-4 mt-2 mb-4'>
-          <div className='notion-callout-text text-lg font-bold border-b-2 py-2 border-[#D2232A]'> 
-            <i className='fas fa-history mr-1'/>
-                {locale.COMMON.RECENT_POSTS}
-          </div>
-          {siteConfig('POST_LIST_STYLE') === 'page' ? (
-            <BlogPostListPage
-              {...props}
-              posts={latestPosts}
-              postCount={latestPosts.length}
-            />
-          ) : (
-            <BlogPostListScroll {...props} posts={latestPosts} />
-          )}
-        </div>
-      )}
-      {/* 文章列表 */}
       <ProductCenter {...props} />
-
-      {/* 铺开导航菜单 */}
-    </>
   )
 }
 
