@@ -65,7 +65,7 @@ export async function getStaticProps(req) {
     const floatingPost = props.allPages?.find(
       page =>
         page?.slug === floatingPostSlug &&
-        page.status === 'Published'
+        page?.status === 'Published'
     )
 
     if (floatingPost) {
