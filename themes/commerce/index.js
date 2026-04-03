@@ -125,9 +125,7 @@ const LayoutIndex = props => {
   const { notice, latestPosts, floatingPost } = props
   const { locale } = useGlobal()
   return (
-    <>
-    <FloatingNotionWindow post={floatingPost} />
-    
+    <>    
     
      {/* 产品中心 */}
       <ProductCenter {...props} />
