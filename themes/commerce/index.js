@@ -127,9 +127,6 @@ const LayoutIndex = props => {
   return (
     <>    
     
-     {/* 产品中心 */}
-      <ProductCenter {...props} />
-
     {/* 首页企业/品牌介绍 这里展示公告 */}
       {notice && (
         <div id='brand-introduction' className='dark:text-gray-300 mx-auto overflow-hidden'>
