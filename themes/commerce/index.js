@@ -156,9 +156,7 @@ const LayoutIndex = props => {
       {/* 文章列表 */}
       <ProductCenter {...props} />
 
-      {/* 懸浮通知視窗 */}  
-    //  <FloatingNotionWindow post={floatingPost} />
-    
+
 
       {/* 铺开导航菜单 */}
     </>
