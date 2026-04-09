@@ -9,7 +9,7 @@ const CONFIG = {
   COMMERCE_TEXT_FOOTER_MENU_1: '文章分類', // COMMERCE主题页脚左侧菜单标题1
   COMMERCE_TEXT_FOOTER_MENU_2: '手冊地圖', // COMMERCE主题页脚左侧菜单标题2
 
-  COMMERCE_FOOTER_RIGHT_IMG_URL: 'https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F58a77b77-0672-454d-899a-8f0d3576b8f1%2Fbc0ebe9d-f388-47fc-910c-8c5720e3a84c%2FIMG_0918.png?table=block&id=2f26ce27-8df4-4786-8a38-665268426901&t=2f26ce27-8df4-4786-8a38-665268426901&width=200&cache=v2', // 显示页脚右侧的图片，通常放二维码
+  COMMERCE_FOOTER_RIGHT_IMG_URL: 'http://cmuhdnr.vercel.app/qrcode.png', // 显示页脚右侧的图片，通常放二维码
   COMMERCE_FOOTER_RIGHT_TEXT: 'Survival Guide QR code', // 页脚右侧图片下的文字描述
 
   COMMERCE_HOME_POSTS_COUNT: 18, // 首页展示商品数
